@@ -612,15 +612,26 @@ a:-webkit-any-link {
 	cursor: pointer;
 }
 
-.gap_10px .gap {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 10px;
+.one-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+	word-break: break-all;
 }
-.gap_20px .gap {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 20px;
+
+.two-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.three-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }

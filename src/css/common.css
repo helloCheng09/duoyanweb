@@ -1,0 +1,202 @@
+* {
+  font-family: MicrosoftYaHei;
+}
+.head-b {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #000000;
+}
+.head-b .head-list {
+  max-width: 1200px;
+  min-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #000000;
+}
+.head-b .head-list .list-b {
+  overflow: hidden;
+  text-align: center;
+  font-size: 0;
+}
+.head-b .head-list .list-show {
+  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+}
+.head-b .head-list .list-item,
+.head-b .head-list .list-item-img {
+  float: left;
+  padding: 0 40px;
+  cursor: pointer;
+}
+.head-b .head-list .list-item .img-b,
+.head-b .head-list .list-item-img .img-b {
+  width: 68px;
+  height: 78px;
+  line-height: 78px;
+}
+.head-b .head-list .list-item .img-b .img-logo,
+.head-b .head-list .list-item-img .img-b .img-logo {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+.head-b .head-list .list-item:hover {
+  transition: all 200ms ease;
+  background-color: #ffb99b;
+}
+.head-b .head-list .list-item:hover .nav-item {
+  color: #f5f5f5;
+}
+.head-b .head-list .list-link {
+  display: block;
+}
+.head-b .head-list .nav-item {
+  font-size: 16px;
+  line-height: 78px;
+  color: #fcd2c0;
+}
+.com-title .title-b h3 {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 32px;
+  text-align: center;
+  color: #000000;
+}
+.com-title .detail-b dd {
+  margin-top: 10px;
+  font-family: Garamond;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+}
+.link-more {
+  cursor: pointer;
+}
+.link-more .btn-more {
+  display: inline-block;
+  line-height: 1.7;
+}
+.link-more .btn-more .more-text {
+  font-size: 18px;
+  padding: 0 17px;
+  background-color: #000;
+  color: #fff;
+}
+.link-more .btn-more a {
+  color: #fff;
+}
+.index-product-con {
+  overflow: hidden;
+  margin-top: 65px;
+}
+.index-product-con .content-pic {
+  padding-left: 37px;
+  box-sizing: border-box;
+}
+.index-product-con .content-pic .img-b {
+  width: 580px;
+  height: 440px;
+}
+.index-product-con .content-pic .bg-img {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.index-product-con .content-item {
+  width: 46%;
+}
+.index-product-con .content-item .right-title {
+  line-height: 2;
+}
+.index-product-con .content-item .right-title h3 {
+  font-size: 24px;
+}
+.index-product-con .content-item .des-text {
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 1px solid #ff7f6b;
+}
+.index-product-con .content-item .des-text .text-item {
+  font-size: 18px;
+}
+.index-product-con .content-item .pro-list {
+  margin-top: 26px;
+}
+.index-product-con .content-item .pro-list .list-show .list-item {
+  position: relative;
+  padding-left: 20px;
+}
+.index-product-con .content-item .pro-list .list-show .text-con {
+  position: relative;
+  width: 85%;
+  line-height: 1.5;
+  color: #666;
+}
+.index-product-con .content-item .pro-list .list-show .list-item:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  z-index: 49;
+  margin-top: -6px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff9980;
+}
+.footer-p {
+  position: relative;
+  background-color: #000;
+}
+.footer-p .footer-top-img {
+  position: absolute;
+  top: -4px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.footer-p .footer-b {
+  height: 200px;
+  padding-top: 60px;
+  box-sizing: border-box;
+}
+.footer-p .footer-con .list-show {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.footer-p .footer-con .item-link {
+  line-height: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer-p .footer-con span {
+  display: inline-block;
+  margin: 0 56px;
+  font-size: 18px;
+  color: #fff;
+}
+.footer-p .last-line {
+  text-align: center;
+}
+.footer-p .last-line .copy-right {
+  display: inline-block;
+}
+.footer-p .last-line .copy-right .c-text {
+  line-height: 20px;
+  font-size: 14px;
+  color: #fff;
+}
+.footer-p .last-line .copy-right:nth-of-type(2) {
+  margin-right: 30px;
+}
+.footer-p .last-line .copy-right:nth-of-type(1) {
+  margin-right: 60px;
+}
