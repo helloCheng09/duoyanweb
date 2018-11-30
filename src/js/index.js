@@ -54,6 +54,32 @@
 
     }
 
+    // 表单提交
+    let subFeedback = () => {
+      $(".form-item").submit(function () {
+        var data = $(".form-item").serializeArray()
+        for (var i = 0; i < data.length; i++) {
+          var item = data[i].value
+          if (item == '') {
+            layer.msg('请完善反馈信息~~')
+            return false
+          }
+        }
+        return true
+      })
+    }
+
+    // 分页切换
+    let swithPage = () => {
+      $(".page_num").on("click", function () {
+        $(".page_num").removeClass("select")
+        $(this).addClass("select")
+        var index = $(this).index()
+      })
+    }
+
+    root.swithPage = swithPage
+    root.subFeedback = subFeedback
     root.startMove = startMove
     root.TagToggle = TagToggle
   }(window.$, window.dyweb || (window.dyweb = {})));
@@ -78,7 +104,10 @@
    * 获取
    * getData.js
    */
-  (function ($, root) {}(window.$, window.dyweb || (window.dyweb = {})));
+  (function ($, root) {
+    // 发送后台
+
+  }(window.$, window.dyweb || (window.dyweb = {})));
   /****************************************************************************** */
   /**
    * 入口
@@ -181,7 +210,10 @@
       });
     } else if (document.getElementById('centerNews')) {
       // 新闻中心
+      // 分类切换
       root.TagToggle(".fenlei-list-b .list-item", ".item-text")
+      // 分页切换
+      root.swithPage()
     } else if (document.getElementById('aboutUs')) {
       // 关于我们
       var player = new Aliplayer({
@@ -323,6 +355,9 @@
 
       })
 
+      // 分页切换
+      root.swithPage()
+
     } else if (document.getElementById('jionUs')) {
       // 招商加盟
 
@@ -331,11 +366,14 @@
       /* 地图组件 */
       var map = new BMap.Map("container");
       // 创建地图实例  
-      var point = new BMap.Point(117.34897,31.980139);
+      var point = new BMap.Point(117.34897, 31.980139);
       // 创建点坐标  
       map.centerAndZoom(point, 15);
       var marker = new BMap.Marker(point); // 创建标注    
       map.addOverlay(marker); // 将标注添加到地图中
+
+      // 提交反馈
+      root.subFeedback()
     }
   }(window.$, window.dyweb || (window.dyweb = {})));
 
