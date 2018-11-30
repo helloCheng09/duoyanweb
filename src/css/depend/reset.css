@@ -635,3 +635,11 @@ a:-webkit-any-link {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+.four-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}

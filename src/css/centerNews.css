@@ -185,28 +185,3 @@
   font-size: 14px;
   color: #999;
 }
-#centerNews .main-show .main-p .sec-main-show .control-list {
-  margin-top: 75px;
-}
-#centerNews .main-show .main-p .sec-main-show .control-list .btn-b {
-  display: inline-block;
-  padding-left: 130px;
-}
-#centerNews .main-show .main-p .sec-main-show .control-list .list-show {
-  display: inline-block;
-  overflow: hidden;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-#centerNews .main-show .main-p .sec-main-show .control-list .list-item {
-  cursor: pointer;
-  float: left;
-  padding: 10px 20px;
-  border-right: 1px solid #ddd;
-}
-#centerNews .main-show .main-p .sec-main-show .control-list .list-item .disable {
-  color: #999;
-}
-#centerNews .main-show .main-p .sec-main-show .control-list .list-item:last-of-type {
-  border-right: none;
-}

@@ -1,0 +1,67 @@
+@import "depend/reset.css";
+@import "common.css";
+#jionUs {
+  min-height: 100vh;
+  padding-top: 78px;
+}
+#jionUs .head-bg {
+  height: 450px;
+  position: relative;
+}
+#jionUs .bg-show {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#jionUs .main-show {
+  margin: 70px 0;
+}
+#jionUs .main-show .section-list {
+  width: 1200px;
+  margin: 0 auto;
+}
+#jionUs .main-show .last-new {
+  background-color: #fff !important;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2) !important;
+}
+#jionUs .main-show .section-b {
+  position: relative;
+  height: 720px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  margin-top: 40px !important;
+  background-color: transparent;
+  box-shadow: none;
+}
+#jionUs .main-show .section-b .section-right {
+  position: absolute;
+  right: 76px;
+  top: 50%;
+  width: 50%;
+  transform: translateY(-50%);
+}
+#jionUs .main-show .section-b .section-right .module-item {
+  margin-top: 20px;
+}
+#jionUs .main-show .section-b .section-right .module-item h3 {
+  line-height: 3;
+  font-size: 24px;
+}
+#jionUs .main-show .section-b .section-right .module-item .list-b .list-item {
+  line-height: 2;
+  font-size: 16px;
+}
+#jionUs .main-show .link-more {
+  text-align: center;
+}
+#jionUs .main-show .contact-us {
+  height: auto;
+  padding-bottom: 80px;
+}
+#jionUs .main-show .contact-us .list-contact {
+  padding: 0 20px;
+}

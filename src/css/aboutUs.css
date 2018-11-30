@@ -3,7 +3,6 @@
 #aboutUs {
   min-height: 100vh;
   padding-top: 78px;
-  background-color: #ffedea;
 }
 #aboutUs .main-show .head-bg {
   height: 500px;
@@ -13,6 +12,130 @@
   position: absolute;
   width: 100%;
   height: 100%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#aboutUs .main-show .section-list .section-b {
+  width: 1200px;
+  margin: 80px auto;
+}
+#aboutUs .main-show .section-list .com-title {
+  margin-bottom: 80px;
+}
+#aboutUs .main-show .section-list .text-con {
+  margin-bottom: 60px;
+}
+#aboutUs .main-show .section-list .text-con p {
+  line-height: 1.5;
+  text-align: center;
+  color: #999;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(2) {
+  padding: 80px 0;
+  overflow: hidden;
+  background-color: #ffedea;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(2) .text-con {
+  margin-bottom: 60px;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(2) .text-con p {
+  line-height: 1.5;
+  text-align: center;
+  color: #333;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(2) .img-show {
+  display: flex;
+  justify-content: space-between;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(2) .img-show .img-pic {
+  width: 49%;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(2) .img-show .img-pic img {
+  width: 100%;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(3) {
+  width: 1300px;
+}
+#aboutUs .main-show .section-list .swiper-container .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  margin-top: -25px;
+  background-color: #000000;
+  opacity: 0.5;
+  background-image: url(../img/left.png);
+  background-size: 30px 30px;
+  background-position: 57%;
+}
+#aboutUs .main-show .section-list .swiper-container .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  right: 0;
+  margin-top: -25px;
+  background-color: #000000;
+  opacity: 0.5;
+  background-image: url(../img/right.png);
+  background-size: 30px 30px;
+  background-position: 30%;
+}
+#aboutUs .main-show .section-list .swiper-wrapper {
+  padding-left: 70px;
+}
+#aboutUs .main-show .section-list .img-swiper {
+  margin-bottom: 100px;
+}
+#aboutUs .main-show .section-list .swiper-slide {
+  display: flex;
+}
+#aboutUs .main-show .section-list .swiper-slide .left-pic {
+  width: 160px;
+  height: 160px;
+}
+#aboutUs .main-show .section-list .swiper-slide .left-pic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+#aboutUs .main-show .section-list .swiper-slide .right-con {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+#aboutUs .main-show .section-list .swiper-slide .person-name {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: normal;
+  width: 320px;
+  margin-bottom: 10px;
+}
+#aboutUs .main-show .section-list .swiper-slide .person-status {
+  display: inline-block;
+  width: 320px;
+  margin-bottom: 20px;
+  color: #999;
+}
+#aboutUs .main-show .section-list .swiper-slide .con-des {
+  display: inline-block;
+  width: 320px;
+  line-height: 1.5;
+  color: #999;
+}
+#aboutUs .main-show .section-list .team-pics .team-b {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#aboutUs .main-show .section-list .team-pics .team-b .img-b {
+  position: relative;
+  width: 28%;
+}
+#aboutUs .main-show .section-list .team-pics .team-b .img-det {
+  width: 100%;
+  padding-bottom: 100%;
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;

@@ -66,6 +66,7 @@
         h3 {
             font-family: MicrosoftYaHei-Bold;
             font-size: 32px;
+            font-weight: normal;
             text-align: center;
             color: #000000;
         }
@@ -164,9 +165,40 @@
     }
 }
 
+// 分页器
+.page-control {}
+.control-list {
+    margin-top: 75px;
+    .btn-b {
+        display: inline-block;
+        padding-left: 130px;
+    }
+    .list-show {
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+    .list-item {
+        cursor: pointer;
+        float: left;
+        padding: 10px 20px;
+        border-right: 1px solid #ddd;
+        .item-text {
+
+        }
+        .disable {
+            color: #999;
+        }
+    }
+    .list-item:last-of-type{
+        border-right: none;
+    }
+}
 // 底部 footer
 .footer-p {
     position: relative;
+    min-width: 1200px;
     background-color: #000;
     .footer-top-img{
         position: absolute;

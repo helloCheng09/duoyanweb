@@ -1,0 +1,158 @@
+@import "depend/reset.css";
+@import "common.css";
+#centerPro {
+  min-height: 100vh;
+  padding-top: 78px;
+}
+#centerPro .main-show .head-bg {
+  height: 500px;
+  position: relative;
+}
+#centerPro .main-show .bg-show {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#centerPro .main-show .section-b {
+  width: 1200px;
+  margin: 0 auto;
+}
+#centerPro .main-show .index-product-con:nth-of-type(1) {
+  margin-bottom: 80px;
+}
+#centerPro .main-show .index-product-con:nth-of-type(1) .main-b .content-pic {
+  float: left;
+}
+#centerPro .main-show .index-product-con:nth-of-type(1) .main-b .content-pic .img-b {
+  height: 300px;
+}
+#centerPro .main-show .index-product-con:nth-of-type(1) .main-b .content-item {
+  float: right;
+  padding-left: 30px;
+  margin-top: 50px;
+}
+#centerPro .main-show .link-more {
+  margin-top: 50px;
+}
+#centerPro .main-show .section-b {
+  margin-bottom: 100px;
+}
+#centerPro .main-show .section-b .com-title {
+  margin-bottom: 80px;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item:hover .link-text {
+  display: block;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item {
+  width: 32%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item .img-b {
+  position: relative;
+  overflow: hidden;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item .pro-link {
+  display: block;
+  color: #333;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item .img-det {
+  height: 300px;
+  background-color: #f1f1f1;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item .mark-down {
+  position: absolute;
+  top: -300px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 80;
+  background-color: #ffc4ba;
+  opacity: 0.6;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item .link-text {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: none;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item .link-text .link-more {
+  padding: 4px 20px;
+  font-size: 20px;
+  border: 2px solid #000;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item .pro-des {
+  padding: 10px 20px;
+}
+#centerPro .main-show .section-b .pro-main-show .pro-item .pro-des .des-text {
+  font-size: 24px;
+  line-height: 1.2;
+}
+#centerPro .main-show .section-b .pro-main-show .control-list {
+  text-align: center;
+}
+#centerPro .main-show .section-b .pro-main-show .control-list .btn-b {
+  padding-left: 0;
+}
+#centerPro .main-show .section-b:nth-of-type(4) {
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: #ffedea;
+}
+#centerPro .main-show .section-b:nth-of-type(4) .com-title {
+  margin-bottom: 50px;
+}
+#centerPro .main-show .section-b:nth-of-type(4) .slider-b {
+  width: 1200px;
+  margin: 0 auto;
+}
+#centerPro .main-show .section-b:nth-of-type(4) .swiper-slide {
+  width: 42%;
+}
+#centerPro .main-show .section-b:nth-of-type(4) .swiper-slide .img-b {
+  width: 100%;
+  height: 450px;
+  text-align: center;
+}
+#centerPro .main-show .section-b:nth-of-type(4) .swiper-slide .img-b img {
+  display: inline-block;
+  height: 100%;
+}
+#centerPro .main-show .section-b:nth-of-type(4) .swiper-container .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  margin-top: -25px;
+  background-color: #000000;
+  opacity: 0.5;
+  background-image: url(../img/left.png);
+  background-size: 30px 30px;
+  background-position: 57%;
+}
+#centerPro .main-show .section-b:nth-of-type(4) .swiper-container .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  right: 0;
+  margin-top: -25px;
+  background-color: #000000;
+  opacity: 0.5;
+  background-image: url(../img/right.png);
+  background-size: 30px 30px;
+  background-position: 30%;
+}
