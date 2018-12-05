@@ -28,8 +28,8 @@
           $(this).find(styleEle).toggleClass("select")
           $(btn).eq(lastIndex).find(styleEle).removeClass("select")
           // 展示
-          // $(panels).eq(lastIndex).hide()
-          // $(panels).eq(curIndex).show()
+          $(panels).eq(lastIndex).hide()
+          $(panels).eq(curIndex).show()
           lastIndex = curIndex;
         }
       })
@@ -50,10 +50,37 @@
           dom.style.top = dom.offsetTop + iSpeed + "px"
         }
       }, 20);
-
-
+    }
+    // 放大图片
+    function maxPic() {
+      $(".pro-pic").on("click", function () {
+        $(this).next(".max-pic").show(function () {
+          $(this).on("click", function () {
+            $(this).hide()
+          })
+        })
+      })
     }
 
+    // 产品详情 选择对应图片呢
+    let togPic = () => {
+      var curIndex = null
+      var lastIdex = 0
+      $(".small-pic-b").children(".small-item").on("click", function () {
+        curIndex = $(this).index()
+        if (curIndex != lastIdex) {
+          $('.small-item').eq(lastIdex).toggleClass("select")
+          $('.small-item').eq(curIndex).toggleClass("select")
+          // 取图片地址 
+          var picUrl = "url(" + $('.small-item').eq(curIndex).children(".samll-pic").attr("data-url") + ")"
+          // 赋给展示图片
+          $(".main-pro-pic .pro-pic").css("backgroundImage", picUrl)
+          lastIdex = curIndex
+        } else {
+          return false
+        }
+      })
+    }
     // 表单提交
     let subFeedback = () => {
       $(".form-item").submit(function () {
@@ -78,6 +105,19 @@
       })
     }
 
+    // 产品系列切换
+    let switchTag =() =>{
+      $(".tag-switch .tag-item").each(function(){
+        $(this).on("click", function () {
+          $(".tag-switch .tag-text").removeClass('select')
+          $(this).children(".tag-text").toggleClass("select")
+        })
+      })
+    }
+
+    root.switchTag = switchTag
+    root.togPic = togPic
+    root.maxPic = maxPic
     root.swithPage = swithPage
     root.subFeedback = subFeedback
     root.startMove = startMove
@@ -96,7 +136,187 @@
    * 初始化
    * init.js
    */
-  (function ($, root) {}(window.$, window.dyweb || (window.dyweb = {})));
+  (function ($, root) {
+    // 首页视频
+    function initIndexVideo(videourl) {
+      data = $.parseJSON(videourl);
+      data = data.data;
+      var coverurl = "/upload/" + data.cover;
+      var videourl = "/upload/" + data.video;
+      // 实例化播放器
+      var player = new Aliplayer({
+        "id": "player-con",
+        "source": videourl,
+        "width": "400px",
+        "height": "300px",
+        "autoplay": false,
+        "isLive": false,
+        "cover": coverurl,
+        "rePlay": false,
+        "playsinline": true,
+        "preload": false,
+        "controlBarVisibility": "hover",
+        "useH5Prism": true,
+        "skinLayout": [{
+            "name": "bigPlayButton",
+            "align": "blabs",
+            "x": 30,
+            "y": 80
+          },
+          {
+            "name": "H5Loading",
+            "align": "cc"
+          },
+          {
+            "name": "errorDisplay",
+            "align": "tlabs",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "name": "infoDisplay"
+          },
+          {
+            "name": "tooltip",
+            "align": "blabs",
+            "x": 0,
+            "y": 56
+          },
+          {
+            "name": "thumbnail"
+          },
+          {
+            "name": "controlBar",
+            "align": "blabs",
+            "x": 0,
+            "y": 0,
+            "children": [{
+                "name": "progress",
+                "align": "blabs",
+                "x": 0,
+                "y": 44
+              },
+              {
+                "name": "playButton",
+                "align": "tl",
+                "x": 15,
+                "y": 12
+              },
+              {
+                "name": "timeDisplay",
+                "align": "tl",
+                "x": 10,
+                "y": 7
+              },
+              {
+                "name": "fullScreenButton",
+                "align": "tr",
+                "x": 10,
+                "y": 12
+              },
+              {
+                "name": "volume",
+                "align": "tr",
+                "x": 5,
+                "y": 10
+              }
+            ]
+          }
+        ]
+      }, function (player) {});
+    }
+
+    // 关于我们视频
+    function initAboutVideo(videourl) {
+      data = $.parseJSON(videourl);
+      data = data.data;
+      var coverurl = "/upload/" + data.cover;
+      var videourl = "/upload/" + data.video;
+      var player = new Aliplayer({
+        "id": "player-con",
+        "source": videourl,
+        "width": "1200px",
+        "height": "670px",
+        "autoplay": false,
+        "isLive": false,
+        "cover": coverurl,
+        "rePlay": false,
+        "playsinline": true,
+        "preload": false,
+        "controlBarVisibility": "hover",
+        "useH5Prism": true,
+        "skinLayout": [{
+            "name": "bigPlayButton",
+            "align": "blabs",
+            "x": 30,
+            "y": 80
+          },
+          {
+            "name": "H5Loading",
+            "align": "cc"
+          },
+          {
+            "name": "errorDisplay",
+            "align": "tlabs",
+            "x": 0,
+            "y": 0
+          },
+          {
+            "name": "infoDisplay"
+          },
+          {
+            "name": "tooltip",
+            "align": "blabs",
+            "x": 0,
+            "y": 56
+          },
+          {
+            "name": "thumbnail"
+          },
+          {
+            "name": "controlBar",
+            "align": "blabs",
+            "x": 0,
+            "y": 0,
+            "children": [{
+                "name": "progress",
+                "align": "blabs",
+                "x": 0,
+                "y": 44
+              },
+              {
+                "name": "playButton",
+                "align": "tl",
+                "x": 15,
+                "y": 12
+              },
+              {
+                "name": "timeDisplay",
+                "align": "tl",
+                "x": 10,
+                "y": 7
+              },
+              {
+                "name": "fullScreenButton",
+                "align": "tr",
+                "x": 10,
+                "y": 12
+              },
+              {
+                "name": "volume",
+                "align": "tr",
+                "x": 5,
+                "y": 10
+              }
+            ]
+          }
+        ]
+      }, function (player) {});
+    }
+
+    root.initAboutVideo = initAboutVideo
+    root.initIndexVideo = initIndexVideo
+  }(window.$, window.dyweb || (window.dyweb = {})));
 
 
   /****************************************************************************** */
@@ -106,11 +326,47 @@
    */
   (function ($, root) {
     // get请求
+    function getModule(url) {
+      var url = url
+      // console.log(url)
+      $.ajax({
+        url: url,
+        type: 'GET',
+        success: function (result) {
+          console.log(result)
+          if (document.getElementById('dyIndex')) {
+            var indexVideo = result
+            root.initIndexVideo(indexVideo)
+          } else if (document.getElementById('aboutUs')) {
+            var indexVideo = result
+            root.initAboutVideo(indexVideo)
+          }
+        },
+        error: getError
+      })
+    }
 
-    
     // post请求
+    function postModule(url) {
+      var url = url
+      // console.log(url)
+      $.ajax({
+        url: url,
+        type: 'POST',
+        success: function (result) {
+          // console.log(result)
+        },
+        error: getError
+      })
+    }
 
-    
+    // 请求失败
+    function getError() {
+      console.log("链接失败")
+    }
+
+    root.postModule = postModule
+    root.getModule = getModule
   }(window.$, window.dyweb || (window.dyweb = {})));
   /****************************************************************************** */
   /**
@@ -121,6 +377,8 @@
 
     if (document.getElementById('dyIndex')) {
       // 首页
+      var urlVideo = 'http://www.ahqlzysw.com/index.php/portal/index/aboutvideo'
+      root.getModule(urlVideo)
       // 实例化轮播
       var mySwiper = new Swiper('#swiper1', {
         pagination: {
@@ -129,89 +387,6 @@
         autoplay: true, //可选选项，自动滑动
       })
 
-      // 实例化播放器
-      var player = new Aliplayer({
-        "id": "player-con",
-        "source": "//player.alicdn.com/video/aliyunmedia.mp4",
-        "width": "400px",
-        "height": "300px",
-        "autoplay": false,
-        "isLive": false,
-        "cover": "http://www.wangjiao.com/data/upload/2018/1121/17/5bf52adbcfd74_266_170.jpg",
-        "rePlay": false,
-        "playsinline": true,
-        "preload": false,
-        "controlBarVisibility": "hover",
-        "useH5Prism": true,
-        "skinLayout": [{
-            "name": "bigPlayButton",
-            "align": "blabs",
-            "x": 30,
-            "y": 80
-          },
-          {
-            "name": "H5Loading",
-            "align": "cc"
-          },
-          {
-            "name": "errorDisplay",
-            "align": "tlabs",
-            "x": 0,
-            "y": 0
-          },
-          {
-            "name": "infoDisplay"
-          },
-          {
-            "name": "tooltip",
-            "align": "blabs",
-            "x": 0,
-            "y": 56
-          },
-          {
-            "name": "thumbnail"
-          },
-          {
-            "name": "controlBar",
-            "align": "blabs",
-            "x": 0,
-            "y": 0,
-            "children": [{
-                "name": "progress",
-                "align": "blabs",
-                "x": 0,
-                "y": 44
-              },
-              {
-                "name": "playButton",
-                "align": "tl",
-                "x": 15,
-                "y": 12
-              },
-              {
-                "name": "timeDisplay",
-                "align": "tl",
-                "x": 10,
-                "y": 7
-              },
-              {
-                "name": "fullScreenButton",
-                "align": "tr",
-                "x": 10,
-                "y": 12
-              },
-              {
-                "name": "volume",
-                "align": "tr",
-                "x": 5,
-                "y": 10
-              }
-            ]
-          }
-        ]
-      }, function (player) {
-        console.log("播放器创建了。");
-      });
     } else if (document.getElementById('centerNews')) {
       // 新闻中心
       // 分类切换
@@ -220,94 +395,16 @@
       root.swithPage()
     } else if (document.getElementById('aboutUs')) {
       // 关于我们
-      var player = new Aliplayer({
-        "id": "player-con",
-        "source": "//player.alicdn.com/video/aliyunmedia.mp4",
-        "width": "1200px",
-        "height": "670px",
-        "autoplay": false,
-        "isLive": false,
-        "cover": "http://www.xinhuanet.com/politics/leaders/2018-11/27/1123776081_15433528499741n.jpg",
-        "rePlay": false,
-        "playsinline": true,
-        "preload": false,
-        "controlBarVisibility": "hover",
-        "useH5Prism": true,
-        "skinLayout": [{
-            "name": "bigPlayButton",
-            "align": "blabs",
-            "x": 30,
-            "y": 80
-          },
-          {
-            "name": "H5Loading",
-            "align": "cc"
-          },
-          {
-            "name": "errorDisplay",
-            "align": "tlabs",
-            "x": 0,
-            "y": 0
-          },
-          {
-            "name": "infoDisplay"
-          },
-          {
-            "name": "tooltip",
-            "align": "blabs",
-            "x": 0,
-            "y": 56
-          },
-          {
-            "name": "thumbnail"
-          },
-          {
-            "name": "controlBar",
-            "align": "blabs",
-            "x": 0,
-            "y": 0,
-            "children": [{
-                "name": "progress",
-                "align": "blabs",
-                "x": 0,
-                "y": 44
-              },
-              {
-                "name": "playButton",
-                "align": "tl",
-                "x": 15,
-                "y": 12
-              },
-              {
-                "name": "timeDisplay",
-                "align": "tl",
-                "x": 10,
-                "y": 7
-              },
-              {
-                "name": "fullScreenButton",
-                "align": "tr",
-                "x": 10,
-                "y": 12
-              },
-              {
-                "name": "volume",
-                "align": "tr",
-                "x": 5,
-                "y": 10
-              }
-            ]
-          }
-        ]
-      }, function (player) {
-        console.log("播放器创建了。");
-      });
+      var urlVideo = 'http://www.ahqlzysw.com/index.php/portal/about/aboutvideo'
+      root.getModule(urlVideo)
+
       // 实例化轮播
       var swiper = new Swiper('.swiper-container', {
         slidesPerView: 2,
         spaceBetween: 10,
         slidesPerGroup: 2,
         loop: true,
+        autoplay: true,
         loopFillGroupWithBlank: true,
         navigation: {
           nextEl: '.swiper-button-next',
@@ -345,6 +442,7 @@
         slidesPerView: 'auto',
         initialSlide: 1,
         loop: true,
+        autoplay: true,
         coverflowEffect: {
           rotate: 0,
           stretch: 0,
@@ -358,9 +456,27 @@
         },
 
       })
-
+      // 分类切换 
+      root.switchTag()
       // 分页切换
-      root.swithPage()
+      layui.use('laypage', function () {
+        var laypage = layui.laypage;
+
+        //执行一个laypage实例
+        laypage.render({
+          elem: 'pageWrap',
+          theme: '#ffedea', //主题颜色
+          limit: 6, //每页显示数量
+          count: 50, //数据总数，从服务端得到
+          jump: function (obj, first) { //回调函数
+            console.log(obj)
+            console.log(first)
+            if (!first) {
+              //do something
+            }
+          }
+        });
+      });
 
     } else if (document.getElementById('jionUs')) {
       // 招商加盟
@@ -378,6 +494,16 @@
 
       // 提交反馈
       root.subFeedback()
+    } else if (document.getElementById('detPro')) {
+      // 产品详情
+      // 产品图片最大化
+      root.maxPic()
+      // 产品图片切换
+      root.togPic()
+      // 产品介绍切换
+      root.TagToggle(".tags-item", ".item-text", ".pro-show-b")
+    } else if (document.getElementById('detNew')) {
+      // 新闻详情
     }
   }(window.$, window.dyweb || (window.dyweb = {})));
 

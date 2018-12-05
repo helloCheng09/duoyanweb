@@ -125,6 +125,16 @@
 .index-product-con .content-item .des-text .text-item {
   font-size: 18px;
 }
+.index-product-con .content-item .des-text .pro-center {
+  color: #999;
+}
+.index-product-con .content-item .des-pro {
+  border: none;
+}
+.index-product-con .content-item .des-pro .text-item {
+  font-size: 15px;
+  color: #999;
+}
 .index-product-con .content-item .pro-list {
   margin-top: 26px;
 }
@@ -149,6 +159,21 @@
   height: 10px;
   border-radius: 50%;
   background-color: #ff9980;
+}
+.index-product-con .content-item .pro-list .list-show .cent_pro {
+  padding-left: 0;
+}
+.index-product-con .content-item .pro-list .list-show .cent_pro .text-con {
+  color: #333;
+}
+.index-product-con .content-item .pro-list .list-show .cent_pro:before {
+  display: none;
+}
+.page-control #pageWrap a {
+  color: #333;
+}
+.page-control #pageWrap em {
+  color: #333;
 }
 .control-list {
   margin-top: 75px;
@@ -177,6 +202,29 @@
 }
 .control-list .list-item:last-of-type {
   border-right: none;
+}
+.tag-switch {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.tag-switch .tag-list {
+  display: flex;
+}
+.tag-switch .tag-list .tag-item {
+  line-height: 1.7;
+}
+.tag-switch .tag-list .tag-item .tag-text {
+  font-size: 18px;
+  padding: 0 17px;
+  border: 1px solid #ddd;
+  color: #333;
+  cursor: pointer;
+}
+.tag-switch .tag-list .tag-item .select {
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
 }
 .footer-p {
   position: relative;

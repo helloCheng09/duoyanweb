@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>产品中心</title>
     <!-- css -->
+    <link rel="stylesheet" href="../js/depend/layui/css/layui.css">
     <link rel="stylesheet" href="../css/depend/swiper.min.css">
     <link rel="stylesheet" href="../css/centerPro.css">
     <link rel="stylesheet" href="../css/common.css">
+
     <!-- js -->
     <script type='text/javascript' src="../js/depend/jQuery.min.js"></script>
     <script type='text/javascript' src="../js/depend/swiper.min.js"></script>
@@ -73,12 +75,20 @@
                 </div>
             </div>
         </header>
-
         <div class="main-show">
             <div class="head-bg">
                 <div class="bg-show" style="background-image:url(../img/banner3.jpg);"></div>
             </div>
-
+            <span class="tag-switch">
+                <div class="tag-list">
+                    <div class="tag-item" data-id="1">
+                        <div class='tag-text  select'>白肤美系列</div>
+                    </div>
+                    <div class="tag-item ">
+                        <div class='tag-text'>美肌护肤系列</div>
+                    </div>
+                </div>
+            </span>
             <div class="section-b">
                 <div class="product-list">
                     <div class="index-product-con">
@@ -90,28 +100,19 @@
                             </div>
                             <div class="content-item">
                                 <div class="right-title">
-                                    <h3>白肤美系列 • 蓝铜肽修护套</h3>
+                                    <h3>白肤美 • 净白疗肤套</h3>
                                 </div>
-                                <div class="des-text">
-                                    <div class="text-item">
-                                        能量护肤 愈颜专研
+                                <div class="des-text des-pro">
+                                    <div class="text-item ">
+                                        Elegant and pleasant
                                     </div>
                                 </div>
                                 <div class="pro-list">
                                     <ul class="list-show">
-                                        <li class="list-item">
-                                            <div class="text-con one-ellipsis">
-                                                皮肤修护露100ml & 蓝铜多肽30ml & 寡肽营养修护霜30g
-                                            </div>
-                                        </li>
-                                        <li class="list-item">
-                                            <div class="text-con one-ellipsis">
-                                                明眸眼霜30g & 柔肤洁面乳100g
-                                            </div>
-                                        </li>
-                                        <li class="list-item">
-                                            <div class="text-con one-ellipsis">
-                                                修护面膜25ml×5片（3盒）& 寡肽修护冻干粉5g+5ml（10对）
+                                        <li class="list-item cent_pro">
+                                            <div class="text-con four-ellipsis">
+                                                怡人是一家集化妆品原料、研发、生产、加工、培训、项目服务、信息交流于一体化的综合性企业。拥有先进的生产设备、科研中心、高素质的研发、管理、生产人员，现今旗下自主经营的品牌主要有“
+                                                EAP典雅怡人” “SOYA素雅主义”及“时光季TIME SEASON”。
                                             </div>
                                         </li>
                                     </ul>
@@ -120,7 +121,7 @@
                                     <div class="btn-more">
                                         <div class="more-text">
                                             <a href="">
-                                                查看更多
+                                                了解详情
                                             </a>
                                         </div>
                                     </div>
@@ -130,7 +131,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="section-b">
                 <div class="com-title">
                     <div class="title-b">
@@ -243,56 +243,7 @@
                     </div>
                     <div class="page-control">
                         <div class="control-list">
-                            <div class="btn-b">
-                                <ul class="list-show">
-                                    <li class="list-item">
-                                        <div class="item-text disable">
-                                            上一页
-                                        </div>
-                                    </li>
-                                    <li class="list-item page_num select">
-                                        <div class="item-text">
-                                            1
-                                        </div>
-                                    </li>
-                                    <li class="list-item page_num">
-                                        <div class="item-text">
-                                            2
-                                        </div>
-                                    </li>
-                                    <li class="list-item page_num">
-                                        <div class="item-text">
-                                            3
-                                        </div>
-                                    </li>
-
-                                    <li class="list-item page_num">
-                                        <div class="item-text">
-                                            4
-                                        </div>
-                                    </li>
-                                    <li class="list-item  page_num">
-                                        <div class="item-text">
-                                            5
-                                        </div>
-                                    </li>
-                                    <li class="list-item">
-                                        <div class="item-text">
-                                            ...
-                                        </div>
-                                    </li>
-                                    <li class="list-item page_num">
-                                        <div class="item-text">
-                                            24
-                                        </div>
-                                    </li>
-                                    <li class="list-item">
-                                        <div class="item-text">
-                                            下一页
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                            <div id="pageWrap"></div>
                         </div>
                     </div>
                 </div>
@@ -339,7 +290,6 @@
         </div>
     </div>
 
-
     <footer class="footer-p">
         <div class="footer-top-img" style="background-image:url(../img/foot.png)"></div>
         <div class="footer-b">
@@ -381,8 +331,8 @@
     </footer>
 
     <!-- js -->
-    <script type='text/javascript' src="../js/index.js"></script>
     <script type='text/javascript' src="../js/depend/layui/layui.all.js"></script>
+    <script type='text/javascript' src="../js/index.js"></script>
 </body>
 
 </html>

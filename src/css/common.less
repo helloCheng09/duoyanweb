@@ -134,6 +134,16 @@
             .text-item {
                 font-size: 18px;
             }
+            .pro-center {
+                color: #999;
+            }
+        }
+        .des-pro {
+            border: none;
+            .text-item {
+                font-size: 15px;
+                color: #999;
+            }
         }
         .pro-list {
             margin-top: 26px;
@@ -160,13 +170,31 @@
                     border-radius: 50%;
                     background-color: #ff9980;
                 }
+                .cent_pro {
+                    padding-left: 0;
+                    .text-con {
+                        color: #333;
+                    }
+                }
+                .cent_pro:before {
+                    display: none;
+                }
             }
         }
     }
 }
 
 // 分页器
-.page-control {}
+.page-control {
+    #pageWrap {
+        a {
+            color: #333;
+        }
+        em {
+            color: #333;
+        }
+    }
+}
 
 .control-list {
     margin-top: 75px;
@@ -195,6 +223,32 @@
     }
     .list-item:last-of-type {
         border-right: none;
+    }
+}
+
+// 产品中心切换
+.tag-switch {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    .tag-list {
+        display: flex;
+       
+        .tag-item { 
+            line-height: 1.7;
+            .tag-text {
+                font-size: 18px;
+                padding: 0 17px;
+                border: 1px solid #ddd;
+                color: #333;
+                cursor: pointer;
+            }
+            .select {
+                border: 1px solid #000;
+                background-color: #000;
+                color: #fff;
+            }
+        }
     }
 }
 

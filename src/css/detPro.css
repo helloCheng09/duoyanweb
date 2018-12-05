@@ -15,3 +15,136 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#detPro .main-show .top-pro {
+  width: 1200px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  padding-top: 50px;
+  font-size: 0;
+}
+#detPro .main-show .left-top {
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+}
+#detPro .main-show .right-top {
+  display: inline-block;
+  width: 50%;
+  margin-top: 70px;
+  vertical-align: top;
+}
+#detPro .main-show .right-top dt {
+  margin-bottom: 50px;
+}
+#detPro .main-show .right-top dt h3 {
+  font-size: 32px;
+  font-weight: normal;
+}
+#detPro .main-show .right-top dt .eng-des-pro {
+  font-size: 16px;
+  color: #999;
+}
+#detPro .main-show .right-top dd {
+  line-height: 1.5;
+  font-size: 16px;
+}
+#detPro .main-show .main-pro-pic {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#detPro .main-show .main-pro-pic .pro-pic {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#detPro .main-show .main-pro-pic .max-pic {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999999999;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+#detPro .main-show .main-pro-pic .max-pic .pro-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 70%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#detPro .main-show .small-pic {
+  margin-top: 10px;
+}
+#detPro .main-show .small-pic .small-pic-b {
+  width: 500px;
+  margin: 0 auto;
+}
+#detPro .main-show .small-pic .small-pic-b .small-item {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+#detPro .main-show .small-pic .small-pic-b .samll-pic {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#detPro .main-show .small-pic .small-pic-b .select {
+  border-color: gold;
+}
+#detPro .main-show .des-pro {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 61px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+}
+#detPro .main-show .des-pro .des-tags {
+  margin-bottom: 30px;
+}
+#detPro .main-show .des-pro .tags-list {
+  display: flex;
+  font-size: 0;
+}
+#detPro .main-show .des-pro .tags-item {
+  font-size: 24px;
+  color: #fff;
+  background-color: #cccccc;
+  cursor: pointer;
+}
+#detPro .main-show .des-pro .tags-item .item-text {
+  padding: 8px 10px;
+}
+#detPro .main-show .des-pro .select {
+  background-color: #000;
+}
+#detPro .main-show .des-pro .pro-show-p {
+  min-height: 300px;
+}
+#detPro .main-show .des-pro .pro-show-p .show-item {
+  margin-bottom: 20px;
+}
+#detPro .main-show .des-pro .pro-show-p .show-item dt {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2;
+}
+#detPro .main-show .des-pro .pro-show-p .show-item dd {
+  line-height: 1.5;
+  clolor: #666666;
+}

@@ -1,0 +1,212 @@
+@import "depend/reset.css";
+@import "common.css";
+#detNew {
+  min-height: 100vh;
+  padding-top: 78px;
+}
+#detNew .main-show .head-bg {
+  height: 500px;
+  position: relative;
+}
+#detNew .main-show .bg-show {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#detNew .main-show .main-p {
+  padding-bottom: 48px;
+}
+#detNew .main-show .main-p .sec-b:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#detNew .main-show .main-p .sec-b {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+#detNew .main-show .main-p .sec-b .left-nav {
+  z-index: 99;
+  position: absolute;
+  top: -91px;
+  left: 0;
+}
+#detNew .main-show .main-p .sec-b .head-module {
+  font-family: MicrosoftYaHei;
+  color: #fcd2c0;
+}
+#detNew .main-show .main-p .sec-b .head-module .dt-top {
+  padding-left: 35px;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  background-color: #211612;
+}
+#detNew .main-show .main-p .sec-b .head-module .dt-top h3 {
+  font-size: 36px;
+  font-weight: normal;
+}
+#detNew .main-show .main-p .sec-b .head-module .dt-bot {
+  padding-left: 35px;
+  padding-bottom: 40px;
+  padding-top: 10px;
+  background-color: #333;
+}
+#detNew .main-show .main-p .sec-b .head-module .dt-bot h3 {
+  font-size: 23px;
+  font-weight: normal;
+}
+#detNew .main-show .main-p .sec-b .fenlei-list-b {
+  padding: 12px 0;
+  background-color: #f8f8f8;
+}
+#detNew .main-show .main-p .sec-b .fenlei-list-b .list-item {
+  position: relative;
+  cursor: pointer;
+  padding: 12px 0;
+}
+#detNew .main-show .main-p .sec-b .fenlei-list-b .select::before {
+  content: '';
+  position: absolute;
+  left: 59px;
+  top: 0;
+  z-index: 33;
+  margin-top: 12px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: transparent transparent transparent #fcd2c0;
+}
+#detNew .main-show .main-p .sec-b .fenlei-list-b .item-text {
+  text-align: center;
+  line-height: 18px;
+  font-size: 18px;
+  transition: all 100ms linear;
+  color: #666;
+}
+#detNew .main-show .main-p .sec-b .fenlei-list-b .list-item:hover .item-text {
+  color: #fcd2c0;
+}
+#detNew .main-show .main-p .sec-b .fenlei-list-b .select {
+  color: #fcd2c0;
+}
+#detNew .main-show .main-p .sec-b .left-nav {
+  width: 240px;
+}
+#detNew .main-show .main-p .left-nav {
+  float: left;
+}
+#detNew .main-show .main-p .sec-main-show {
+  float: right;
+  width: 880px;
+  padding-bottom: 40px;
+}
+#detNew .main-show .main-p .sec-main-show h3 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+#detNew .main-show .main-p .sec-main-show .data-time {
+  font-size: 18px;
+  text-align: center;
+  color: #999;
+}
+#detNew .main-show .main-p .sec-main-show .text-b {
+  margin-top: 20px;
+}
+#detNew .main-show .main-p .sec-main-show .text-b p {
+  text-indent: 2em;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+#detNew .main-show .main-p .sec-main-show .text-b p img {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+#detNew .main-show .main-p .sec-main-show .title-item {
+  padding-left: 10px;
+}
+#detNew .main-show .main-p .sec-main-show .title-item .title-en {
+  display: inline-block;
+}
+#detNew .main-show .main-p .sec-main-show .title-item .title-en h3 {
+  font-weight: normal;
+  color: #999;
+}
+#detNew .main-show .main-p .sec-main-show .title-item .title-det {
+  display: inline-block;
+}
+#detNew .main-show .main-p .sec-main-show .title-item .title-det h3 {
+  font-size: 28px;
+  font-weight: normal;
+}
+#detNew .main-show .main-p .sec-main-show .list-b {
+  margin-top: 15px;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show {
+  overflow: hidden;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item:hover a {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item a {
+  display: inline-block;
+  overflow: hidden;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .select {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .content-a {
+  overflow: hidden;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .left-con {
+  float: left;
+  overflow: hidden;
+  padding: 8px;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .img-show {
+  width: 200px;
+  height: 130px;
+  background-color: #e6e6e6;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .bg-img {
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .right-con {
+  float: left;
+  overflow: hidden;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .right-con .title-con {
+  padding: 23px 0 10px 0;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .right-con h3 {
+  font-family: MicrosoftYaHei;
+  font-size: 24px;
+  font-weight: normal;
+  color: #333333;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .right-con .con-text {
+  max-width: 600px;
+  color: #999;
+}
+#detNew .main-show .main-p .sec-main-show .list-b .list-show .list-item .right-con .creat-time {
+  float: right;
+  line-height: 2;
+  padding-right: 15px;
+  font-size: 14px;
+  color: #999;
+}
