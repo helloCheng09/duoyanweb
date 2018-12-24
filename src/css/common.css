@@ -2,6 +2,7 @@
   font-family: MicrosoftYaHei;
 }
 .head-b {
+  position: relative;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,7 +10,19 @@
   z-index: 999;
   background-color: #000000;
 }
+.head-b .num-b {
+  position: absolute;
+  right: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99999;
+}
+.head-b .num-b .tel-num {
+  font-size: 22px;
+  color: #fcd2c0;
+}
 .head-b .head-list {
+  position: relative;
   max-width: 1200px;
   min-width: 1100px;
   margin: 0 auto;

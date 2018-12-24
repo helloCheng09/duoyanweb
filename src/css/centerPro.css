@@ -42,16 +42,20 @@
 #centerPro .main-show .section-b .com-title {
   margin-bottom: 80px;
 }
+#centerPro .main-show .section-b .pro-main-show .show-b {
+  height: 740px;
+}
 #centerPro .main-show .section-b .pro-main-show .pro-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 #centerPro .main-show .section-b .pro-main-show .pro-item:hover .link-text {
   display: block;
 }
 #centerPro .main-show .section-b .pro-main-show .pro-item {
-  width: 32%;
+  width: 31%;
+  margin: 0 10px;
   margin-bottom: 20px;
   border: 1px solid #ddd;
   cursor: pointer;

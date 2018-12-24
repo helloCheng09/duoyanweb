@@ -57,6 +57,54 @@
 #aboutUs .main-show .section-list .section-b:nth-of-type(3) {
   width: 1300px;
 }
+#aboutUs .main-show .section-list .section-b:nth-of-type(4) {
+  width: 100%;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: #ffedea;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(4) .com-title {
+  margin-bottom: 50px;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(4) .slider-b {
+  width: 1200px;
+  margin: 0 auto;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(4) .swiper-slide {
+  width: 42%;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(4) .swiper-slide .img-b {
+  width: 100%;
+  height: 450px;
+  text-align: center;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(4) .swiper-slide .img-b img {
+  display: inline-block;
+  height: 100%;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(4) .swiper-container .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  margin-top: -25px;
+  background-color: #000000;
+  opacity: 0.5;
+  background-image: url(../img/left.png);
+  background-size: 30px 30px;
+  background-position: 57%;
+}
+#aboutUs .main-show .section-list .section-b:nth-of-type(4) .swiper-container .swiper-button-next {
+  width: 50px;
+  height: 50px;
+  right: 0;
+  margin-top: -25px;
+  background-color: #000000;
+  opacity: 0.5;
+  background-image: url(../img/right.png);
+  background-size: 30px 30px;
+  background-position: 30%;
+}
 #aboutUs .main-show .section-list .swiper-container .swiper-button-prev {
   width: 50px;
   height: 50px;

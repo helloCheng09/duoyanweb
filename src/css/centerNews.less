@@ -188,6 +188,37 @@
                         }
                     }
                 }
+                .page-control{
+                    height: 32px;
+                    margin: 14px 0;
+                    position: relative;
+                    text-align: center;
+                    
+                }
+                .pagination{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    display: flex;
+                    border: 1px solid #ddd;
+                    .page-item {
+                        width: 40px;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-right: 1px solid #ddd;
+                        a{
+                             color: #333;
+                        }
+                    }
+                    .page-item:last-child {
+                        border: none;
+                    }
+                    .active {
+                        color: #333;
+                        background-color: #ffedea;
+                    }
+                }
             }
         }
     }
