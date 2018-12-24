@@ -85,7 +85,17 @@
   padding: 20px;
   box-sizing: border-box;
 }
+#dyIndex .main-show .section-list .section-b:nth-of-type(2) .main-b .adv-pn .adv-item .item-text .nine-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  word-break: break-all;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+}
 #dyIndex .main-show .section-list .section-b:nth-of-type(2) .main-b .adv-pn .adv-item .item-text p {
+  display: inline-block;
+  height: 288px;
   line-height: 2;
 }
 #dyIndex .main-show .section-list .section-b:nth-of-type(2) .main-b .adv-pn .adv-item .item-pic {

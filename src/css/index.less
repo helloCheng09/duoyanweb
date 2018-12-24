@@ -58,8 +58,7 @@
                             height: 100%;
                             background-size: cover;
                             background-repeat: no-repeat;
-                            background-position: 50%;
-                            // background-color: #f3f4f8;
+                            background-position: 50%; // background-color: #f3f4f8;
                         }
                     }
                 }
@@ -98,7 +97,17 @@
                                 width: 50%;
                                 padding: 20px;
                                 box-sizing: border-box;
+                                .nine-ellipsis {
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    display: -webkit-box;
+                                    word-break: break-all;
+                                    -webkit-line-clamp: 9;
+                                    -webkit-box-orient: vertical;
+                                }
                                 p {
+                                    display: inline-block;
+                                    height: 288px;
                                     line-height: 2;
                                 }
                             }
@@ -106,7 +115,7 @@
                                 position: relative;
                                 width: 50%;
                                 height: 0;
-                                padding-bottom:328px;
+                                padding-bottom: 328px;
                                 .pic-bx {
                                     position: absolute;
                                     width: 100%;
